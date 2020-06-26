@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>한솔제지</title>
   <style>
-    *{
-      margin:0;
-      border:none;
-      padding:0;
-    }
+    /* css reset */
+    *{margin:0;border:none;padding:0;}
+    a{text-decoration:none;color:#000000;}
+    ul,ol{list-style:none;}
+
+
+    /* page Css */
     .wrap{
       width:1200px;
       margin:0 auto;
@@ -49,6 +51,27 @@
       color:#5b6366;
       text-align:right;
     }
+    li{
+      display:inline-block;      
+    }
+    .s_menu{
+      padding:20px 0;
+    }
+    .s_menu>li{
+      padding:0 14px;
+    }
+    .border-right{
+      border-right:#5b6366 1px solid;
+    }
+    .s_menu>.border-right-none{
+      padding-right:0;
+    }
+    .s_menu>li>a{
+      font-size:12px;
+      color:#666666;
+    }
+    .l_menu>li{}
+
 
     .section{clear:both;}
   </style>
@@ -68,7 +91,23 @@
         </div>
         <div class="header_left_bottom">한솔제지</div>
       </div>
-      <div class="header_right">메뉴</div>
+      <div class="header_right">
+        <ul class="s_menu">
+          <li class="border-right"><a href="#">home</a></li>
+          <li class="border-right"><a href="#">English</a></li>
+          <li class="border-right"><a href="#">Sitemap</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">인스타</a></li>
+          <li class="border-right-none"><a href="#">페이스북</a></li>
+        </ul>
+        <ul class="l_menu">
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">사업영역</a></li>
+          <li><a href="#">지속가능경영</a></li>
+          <li><a href="#">투자정보</a></li>
+          <li><a href="#">고객지원</a></li>
+        </ul>
+      </div>
     </div>
 
     <div class="section">
