@@ -21,7 +21,7 @@
       padding:4px;
     }
     .header_left{
-      padding-top:39px;
+      padding-top:26px;
       float:left;
     }
     .header_right{
@@ -56,6 +56,7 @@
     }
     .s_menu{
       padding:20px 0;
+      text-align:right;
     }
     .s_menu>li{
       padding:0 14px;
@@ -63,15 +64,24 @@
     .border-right{
       border-right:#5b6366 1px solid;
     }
-    .s_menu>.border-right-none{
-      padding-right:0;
+    .border-right-none{
+      padding-right:0 !important;
     }
     .s_menu>li>a{
       font-size:12px;
       color:#666666;
     }
-    .l_menu>li{}
-
+    .l_menu{
+      padding:16px 0 40px;
+    }
+    .l_menu>li{
+      padding:0 32px;
+    }
+    .l_menu>li>a{
+      font-weight:bold;
+      font-size:18px;
+      color:#111111;
+    }
 
     .section{clear:both;}
   </style>
@@ -105,7 +115,7 @@
           <li><a href="#">사업영역</a></li>
           <li><a href="#">지속가능경영</a></li>
           <li><a href="#">투자정보</a></li>
-          <li><a href="#">고객지원</a></li>
+          <li class="border-right-none"><a href="#">고객지원</a></li>
         </ul>
       </div>
     </div>
