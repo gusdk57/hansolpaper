@@ -3,9 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="./css/reset.css">
   <title>한솔제지</title>
+
+  <style>
+  /* wrap CSS */
+  .content{width:1240px;margin:0 auto;}
+    
+
+    /* header CSS */
+    .header{height:150px;background-color:rgba(0,0,0,0.2);}
+
+
+    /* section CSS */
+    .article{margin-bottom:180px;}
+      
+      /* main banner CSS */
+      .main_banner{height:820px;background-color:rgba(255,0,0,0.2);}
+      
+      /* sub banner CSS */
+      .sub_banner{height:892px;background-color:rgba(0,255,0,0.2);}
+      
+      /* people CSS */
+      .people{height:718px;background-color:rgba(0,0,255,0.2);}
+
+
+    /* footer CSS */
+    .footer{height:150px;background-color:rgba(255,255,0,0.2);}
+  </style>
+
 </head>
 <body>
-  
+  <div class="wrap">
+    <header class="header"></header>
+    <section class="section">
+      <article class="article main_banner"></article>
+      <article class="article sub_banner"></article>
+      <article class="article people"></article>
+    </section>
+    <footer class="footer"></footer>
+  </div>
 </body>
 </html>
