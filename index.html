@@ -10,18 +10,65 @@
 
     /* header CSS */
     .header{position:fixed;left:0;top:0;width:100%;}
-    .logo,.main_nav,.sns{float:left;}
-    .logo{}
-    .main_nav{}
+    .header .po_re{position:relative;}
+    .logo,.main_nav,.sns{position:absolute;top:10px;}
+    .logo{left:0;}
+    .main_nav{left:210px;}
+    .sns{left:1050px;}
+
+
     .main_nav>li,.sns>li{display:inline-block;}
-    .sns{}
+    .circle{
+      display:inline-block;
+      width:35px;
+      height:35px;
+      border-radius:50%;
+      background-color:#7a7a7c;
+      text-indent:-99999px;
+      position:relative;
+    }
+    .insta div{
+      width:16px;
+      height:16px;
+      border:2px solid white;
+      border-radius:4px;
+      position:absolute;
+      left:50%;
+      top:50%;
+      transform:translate(-50%,-50%);
+    }
+    .insta::before{
+      content:"";
+      display:block;
+      width:10px;
+      height:10px;
+      border:2px solid white;
+      border-radius:7px;
+      position:absolute;
+      left:50%;
+      top:50%;
+      transform:translate(-50%,-50%);
+    }
+    .insta::after{
+      content:"";
+      display:block;
+      width:2px;
+      height:2px;
+      border-radius:50%;
+      position:absolute;
+      left:75%;
+      top:25%;      
+    }
+    .face::before{
+     
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
     <header class="header">
       <div class="container">
-        <div class="clearfix">
+        <div class="po_re">
           <h1 class="logo">
             <a href="index.html">
               <div>
@@ -42,9 +89,9 @@
           </ul>
           <ul class="sns">
             <li><a href="#">고객문의</a></li>
-            <li><a href="#"><img src="./images/ico_insta.png" alt="인스타그램"></a></li>
-            <li><a href="#"><img src="./images/ico_face.png" alt="페이스북"></a></li>
-            <li><a href="#"><img src="./images/ico_eng.png" alt="영어"></a></li>
+            <li><a href="#" class="circle insta"><div>한솔제지 인스타그램 바로가기</div></a></li>
+            <li><a href="#" class="circle face">한솔제지 인스타그램 바로가기</a></li>
+            <li><a href="#" class="circle eng">영문페이지로 보기</a></li>
           </ul>
         </div>
       </div>
