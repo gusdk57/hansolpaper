@@ -19,7 +19,10 @@
     /* header CSS */
     .header{height:150px;background-color:rgba(0,0,0,0.2);}
     .header_left{position:relative;float:left;}
+    .main_nav{position:absolute;left:210px;width:715px;}
+    .main_nav>li{float:left;}
     .header_right.sns{float:right;}
+    .sns li{float:left;}
 
 
     /* section CSS */
@@ -52,7 +55,7 @@
                 <p>한솔제지</p>
               </a>
             </h1>
-            <ul class="main_nav">
+            <ul class="main_nav clearfix">
               <li><a href="#">제품소개</a></li>
               <li><a href="#">회사소개</a></li>
               <li><a href="#">지속가능경영</a></li>
@@ -62,7 +65,7 @@
             </ul>
           </div>
           <div class="header_right sns">
-            <ul>
+            <ul class="clearfix">
               <li><a href="#">고객문의</a></li>
               <li><a href="#"><span>인스타그램</span></a></li>
               <li><a href="#"><span>페이스북</span></a></li>
