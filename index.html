@@ -17,7 +17,7 @@
   a{color:black;}    
 
     /* header CSS */
-    .header{height:150px;background-color:rgba(0,0,0,0.2);}
+    .header{}
     .header_left{position:relative;float:left;}
     .main_logo{height:150px;position:relative;}
     .main_logo>a{position:absolute;top:50%;transform:translateY(-50%);}
@@ -26,10 +26,16 @@
     .main_logo p:first-child::before{background-color:#07c;left:0;top:5px;}
     .main_logo p:first-child::after{background-color:#094;left:0;bottom:5.5px;}
     .main_logo p:last-child{font-size:12px;color:#555555;text-align:right;}
-    .main_nav{position:absolute;left:210px;width:715px;}
-    .main_nav>li{float:left;}
-    .header_right.sns{float:right;}
+    .main_nav{position:absolute;left:210px;top:50%;transform:translateY(-50%);width:715px;}
+    .main_nav>li{float:left;padding:0 25px;}
+    .main_nav>li>a{font-weight:500;font-size:18px;color:#333333;}
+    .main_nav>li:hover:nth-child(2n+1)>a{color:#07c;}
+    .main_nav>li:hover:nth-child(2n)>a{color:#094;}
+    
+    .header_right.sns{float:right;position:relative;width:300px;height:150px;}
+    .sns>ul{position:absolute;top:50%;transform:translateY(-50%);}
     .sns li{float:left;}
+    .sns li span{text-indent:-99999px;}
 
 
     /* section CSS */
