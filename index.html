@@ -14,7 +14,8 @@
   
   /* wrap CSS */
   .content{width:1240px;margin:0 auto;}
-  a{color:black;}    
+  a{color:black;}  
+  .circle{width:35px;height:35px;border-radius:50%;background-color:#7a7a7a;}  
 
     /* header CSS */
     .header{}
@@ -35,7 +36,12 @@
     .header_right.sns{float:right;position:relative;width:300px;height:150px;}
     .sns>ul{position:absolute;top:50%;transform:translateY(-50%);}
     .sns li{float:left;}
-    .sns li span{text-indent:-99999px;}
+    .sns li a{display:inline-block;font-size:14px;color:#666666;position: relative;}
+    .sns li:nth-child(2) span{width:13px;height:13px;border:2px solid white;border-radius:4px;position: absolute;left:50%;top:50%;transform:translate(-50%,-50%);}
+    .sns li:nth-child(2) a::before,.sns li a::after{content:'';display:block;position:absolute;}
+    .sns li:nth-child(2) a::before{width:5px;height:5px;border:2px solid white;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%);}
+
+    .sns li span{display:inline-block;text-indent:-99999px;}
 
 
     /* section CSS */
@@ -80,9 +86,9 @@
           <div class="header_right sns">
             <ul class="clearfix">
               <li><a href="#">고객문의</a></li>
-              <li><a href="#"><span>인스타그램</span></a></li>
-              <li><a href="#"><span>페이스북</span></a></li>
-              <li><a href="#"><span>영어로보기</span></a></li>
+              <li><a href="#" class="circle"><span>인스타그램</span></a></li>
+              <li><a href="#" class="circle"><span>페이스북</span></a></li>
+              <li><a href="#" class="circle"><span>영어로보기</span></a></li>
             </ul>
           </div>
         </div>
